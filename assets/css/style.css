@@ -1,0 +1,100 @@
+/* General HTML elements*/
+body{
+	background-image: url("../images/treasure.jpg");
+	background-repeat:no-repeat;
+    background-size:100% 100%;
+    /* Links to the treasure jpg which I decided on using for the background, then makes sure that the image
+    a) does not repeat on the page and 
+    b) Automatically scales itself to the be the full size possible
+    (i.e. width will scale when you shrink browser window, and length will shrink in proportion)*/
+}
+
+div{
+	background-color: black;
+	margin: 10px;
+	width: 25%;
+	color: white;
+	/*I prefer the white text on black background for the theme I'm going for.*/
+}
+
+div{
+	border: solid 5px #c65c00;
+	padding: 10px;
+	/*Brownish coloring to match the chest and gold coloring best I can*/
+}
+
+h1, h3, span{
+	font-weight: bold;
+	text-align: center;
+	background-color: black;
+	color: gold;
+	/*Gold text stands out well for the theme of the game, white text for instructions makes easy to read.*/
+}
+
+
+h1{
+	font-size: 30pt;
+	/*Preferred a larger font for the top header*/
+}
+
+ol{
+	list-style: decimal inside; 
+	/*numbered list with decimal behind each number in the list*/
+}
+
+ul {
+	list-style: disc inside;
+	text-indent: 30px;
+}
+/* Specfic HTML Elements*/
+
+div.header, div.gems{
+	background-color: black;
+}
+div.header, div.instructions{
+	width: 50%;
+}
+
+#mainheader{
+	color: white;
+	font-weight: bold;
+	font-size: 30px;
+}
+#cursed{
+	color: red;
+	font-style: italic;
+	font-size: 30px;
+	font-weight: bold;
+	font-family: Baskerville, "Baskerville Old Face", "Goudy Old Style", Garamond, "Times New Roman", serif;
+	/* color bold and italic to draw attention*/
+}
+/* Classes */
+.piratesNumber, .winlossrecord{
+	float: left;
+	width: 15%;
+	height: 60px;
+}
+.totalscore{
+	width: 15%;
+	height: 60px;
+}
+.gems{
+	clear: both;
+}
+.gemImage{
+	height: 60px;
+	margin: 10px;
+}
+/* IDs */
+#sapphire{
+	color: #3092c7;
+}
+#emerald{
+	color: #00aa59;
+}
+#ruby{
+	color: #ec4b5f;
+}
+#diamond{
+	color: silver;
+}

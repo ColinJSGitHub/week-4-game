@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Crystal Collector's Game (Pirate Themed)</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+	<div class="header">
+		<h1 id="mainheader">Pirates' Cursed Treasure!</h1>
+	</div>
+	<div class="instructions">
+		<h3>You and your crew have come across a cursed pirate treasure! The game is simple: you may loot as many as you'd like of 4 different types of precious gems. Each gem type is given a random worth, and you must keep grabbing gems until you either reach or exceed the random number the pirates' ghosts have chosen. Win, and you keep all the gems you plundered; lose, and one of your crew will lose their soul,</h3>
+		<br></br>
+		<h3 id="cursed">CURSED FOREVER!</h3>
+		<br></br>
+		<ol>
+			<li>The ghosts give you a number between 19 and 120 at the start of each game- the <span>Pirates' Number</span></li>
+			<li>There are four precious gem types that you can loot.</li>
+			<ul>
+				<li id="sapphire">Sapphire</li>
+				<li id="emerald">Emerald</li>
+				<li id="ruby">Ruby</li>
+				<li id="diamond">Diamond</li>
+			</ul>
+			<li>Whenever you click a gem icon, you will increase your total score by a specific number of points (discrete to each game).</li>
+			<li>You've won the game once you've matched your total score to the <span>Pirates' Number</span></li>
+			<li>If your total score exceeds the <span>Pirates' Number</span>, you've lost the game.</li>
+			<li>Each gem type has a specific value (discrete to each game). Discover it by clicking the gem of your choice!</li>
+			<li>Every time the game begins or restarts, the worth of each gem type will be assigned randomnly.</li>
+		</ol>
+		<br></br>
+		<h3>The Greedy Pirate's challenge:</h3>
+		<br></br>
+			<li> Grab as many gems as you possibly can per game! Will you risk the soul of a crew member for a few more handfuls of treasure? The choice is yours!</li>
+		
+	</div>
+	<div class="piratesNumber">
+		<h2>Pirates' Number:
+			<span id= "randomNumber"></span>
+		</h2>
+	</div>
+	<div class="winlossrecord">
+		<h2>Wins:
+			<span id= "gameswon"></span>
+			</br>
+			Losses: 
+			<span id= "gameslost"></span>
+		</h2>
+	</div>
+	<div class="gems">
+		<img src="assets/images/sapphireicon.png" class=gemImage id="one" alt="Sapphire">
+		<img src="assets/images/emeraldicon.png" class=gemImage id="two" alt="Emerald">
+		<img src="assets/images/rubyicon.png" class=gemImage id= "three" alt="Ruby">
+		<img src="assets/images/diamondicon.png" class=gemImage id= "four" alt="Diamond">
+	</div>
+	<div class="totalscore">
+		<h2>Your total score is:
+			<span id="finalTotal"></span>
+		</h2>
+	</div>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+</html>
